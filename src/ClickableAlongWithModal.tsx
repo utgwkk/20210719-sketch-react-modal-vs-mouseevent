@@ -13,8 +13,12 @@ export const ClickableAlongWithModal = () => {
   return (
     <div>
       <h2>along with modal</h2>
-      <button onClick={() => setIsOpen(true)}>open modal</button>
-      <Clickable>This area is clickable!!!!!</Clickable>
+      <Clickable>
+        This area is clickable!!!!!
+        <p>
+          <button onClick={() => setIsOpen(true)}>open modal</button>
+        </p>
+      </Clickable>
       <Modal isOpen={isOpen} onRequestClose={handleRequestClose}>
         <div>
           <h2>Modal</h2>

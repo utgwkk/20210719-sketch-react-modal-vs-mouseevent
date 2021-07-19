@@ -13,9 +13,11 @@ export const ClickableContainsModal = () => {
   return (
     <div>
       <h2>contains modal</h2>
-      <button onClick={() => setIsOpen(true)}>open modal</button>
       <Clickable>
         This area is clickable!!!!!
+        <p>
+          <button onClick={() => setIsOpen(true)}>open modal</button>
+        </p>
         <Modal isOpen={isOpen} onRequestClose={handleRequestClose}>
           <div>
             <h2>Modal</h2>
