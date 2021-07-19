@@ -1,3 +1,4 @@
+import { ClickableAlongWithModal } from "./ClickableAlongWithModal";
 import { ClickableContainsModal } from "./ClickableContainsModal";
 
 export const App = () => {
@@ -5,6 +6,7 @@ export const App = () => {
     <div className="App">
       <h1>Hello, world!</h1>
       <ClickableContainsModal />
+      <ClickableAlongWithModal />
     </div>
   );
 };
