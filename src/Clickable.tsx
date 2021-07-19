@@ -1,9 +1,9 @@
 import { MouseEventHandler, useCallback, useState } from "react";
 import Modal from "react-modal";
 
-import styles from "./Draggable.module.css";
+import styles from "./Clickable.module.css";
 
-export const Draggable = () => {
+export const Clickable = () => {
   const handleMouseDown: MouseEventHandler = useCallback((e) => {
     console.log(`clicked!!!! ${new Date()}`);
   }, []);
@@ -15,7 +15,7 @@ export const Draggable = () => {
 
   return (
     <div className={styles.container} onMouseDown={handleMouseDown}>
-      This area is draggable!!!!!
+      This area is clickable!!!!!
       <button onClick={() => setIsOpen(true)}>open modal</button>
       <Modal isOpen={isOpen} onRequestClose={handleRequestClose}>
         <div>

@@ -1,10 +1,10 @@
-import { Draggable } from "./Draggable";
+import { Clickable } from "./Clickable";
 
 export const App = () => {
   return (
     <div className="App">
       <h1>Hello, world!</h1>
-      <Draggable />
+      <Clickable />
     </div>
   );
 };
